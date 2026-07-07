@@ -1,5 +1,5 @@
 Algorithm,Average_WT,Average_TAT,Average_RT
-FCFS,8.2,13.0,8.2
-SJF,5.6,10.4,5.6
-Priority,5.8,10.6,5.8
-Round Robin,10.6,15.4,2.8
+FCFS,5.5,8.5,5.5
+SJF,3.25,6.25,3.25
+Priority,5.0,8.0,5.0
+Round Robin,5.25,8.25,2.25
