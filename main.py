@@ -2,9 +2,11 @@ import time
 import random
 import os
 import sys
+import copy
 from scheduler.Process import Process
 from utils.Predefined_Processes import Predefined_Processes
-# from scheduler.FCFS import FCFS
+
+from scheduler.FCFS import FCFS
 # from scheduler.SJF import SJF
 # from scheduler.Priority import PriorityScheduler
 # from scheduler.RoundRobin import RoundRobin
@@ -61,11 +63,30 @@ def main():
 
     print("\nCreated Processes:")
     for i, process in enumerate(process_list, start=1):
-        #print(f"  [PID {process.pid}], Process_encrypt_id: {process.process_id}, Burst: {process.burst_time}, Priority: {process.priority}, Arrival: {process.arrival_time}")
         print(f"  [Process {i}] {process}")
 
     print("\nProcess list created successfully. will run all scheduling algorithms on train of processes now.")
+    
     #just do FCFS.run(process_list) SJF.run(process_list) Priority.run(process_list) RoundRobin.run(process_list) and print the output of each algorithm
+    fcfs = FCFS(process_list)
+    fcfs.run()
+    fcfs.print_result()
+    fcfs.print_final_order_of_completion()
+
+    print(
+        f"Average WT: "
+        f"{fcfs.average_waiting_time:.2f}"
+    )
+
+    print(
+        f"Average TAT: "
+        f"{fcfs.average_turnaround_time:.2f}"
+    )
+
+    print(
+        f"Average RT: "
+        f"{fcfs.average_response_time:.2f}"
+    )
 
 
 if __name__ == "__main__":

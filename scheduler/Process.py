@@ -13,6 +13,8 @@ class Process:
         self.waiting_time = 0
         self.turnaround_time = 0
         self.arrival_time = arrival_time
+        self.completion_time=None
+        self.respnse_time=None
 
     def _encrypt_id(self, val):
         """
@@ -41,6 +43,10 @@ class Process:
     def addnumber(self,x,y):
         return x+y
 
+
     def __str__(self):
-        return f"Process PID: {self.pid}, Process Encrypt ID: {self.process_id}, Burst Time: {self.burst_time}, Priority: {self.priority}, Remaining Time: {self.remaining_time}, Waiting Time: {self.waiting_time}, Turnaround Time: {self.turnaround_time}, arrival_time: {self.arrival_time}"
+        return (f"Process PID: {self.pid}, Process Encrypt ID: {self.process_id}, Burst Time: {self.burst_time}, Priority: {self.priority}, "
+                f"Remaining Time: {self.remaining_time}, Waiting Time: {self.waiting_time}, Turnaround Time: {self.turnaround_time}, "
+                f"arrival_time: {self.arrival_time}, "
+                f"completion_time: {self.completion_time}, response_time: {self.respnse_time}")
 
