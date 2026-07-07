@@ -5,8 +5,7 @@ class Process:
     def __init__(self, process_id, burst_time, priority, arrival_time):
         # We encrypt the sequential process_id immediately upon initialization
         self.pid=process_id
-        self.process_id = self._encrypt_id(process_id)
-        
+        #self.process_id = self._encrypt_id(process_id) #not needed as we are using sequential process id for simplicity  
         self.burst_time = burst_time
         self.priority = priority
         self.remaining_time = burst_time
@@ -45,7 +44,7 @@ class Process:
 
 
     def __str__(self):
-        return (f"Process PID: {self.pid}, Process Encrypt ID: {self.process_id}, Burst Time: {self.burst_time}, Priority: {self.priority}, "
+        return (f"Process PID: {self.pid}, Burst Time: {self.burst_time}, Priority: {self.priority}, "
                 f"Remaining Time: {self.remaining_time}, Waiting Time: {self.waiting_time}, Turnaround Time: {self.turnaround_time}, "
                 f"arrival_time: {self.arrival_time}, "
                 f"completion_time: {self.completion_time}, response_time: {self.respnse_time}")
