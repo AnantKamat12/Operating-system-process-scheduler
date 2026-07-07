@@ -1,37 +1,38 @@
 # Operating System Process Scheduler Simulator
 
-A Python-based simulator for classical CPU scheduling algorithms built using Object-Oriented Programming principles.
+A Python-based simulator for classical CPU scheduling algorithms built to practice Object-Oriented Programming concepts.
 
-## Planned Features
+## Implemented Features
 
-- First Come First Serve (FCFS)
-- Shortest Job First (SJF)
-- Round Robin (RR)
-- Priority Scheduling
-- Gantt Chart Visualization
-- Command Line Interface (CLI)
-- File-based Process Input
-- Scheduling Statistics and Reports
-- Unit Testing
+- ✅ First Come First Serve (FCFS)
+- ✅ Shortest Job First (SJF)
+- ✅ Priority Scheduling (Non-Preemptive)
+- ✅ Round Robin Scheduling
+- ✅ Scheduling Metrics
+  - Average Waiting Time
+  - Average Turnaround Time
+  - Average Response Time
+- ✅ Comparison Table
+- ✅ CSV Process Input
+- ✅ CSV Metrics Export
 
-## Planned Class Design
+## Project Structure
 
 ```text
-Process
-Scheduler (Abstract Base Class)
-├── FCFSScheduler
-├── SJFScheduler
-├── RoundRobinScheduler
-└── PriorityScheduler
+scheduler/
+statistics/
+utils/
+tests/
 
-Statistics
-Simulation
+main.py
+README.md
 ```
 
 ## Technologies
 
 - Python 3
 - Object-Oriented Programming
+- Pandas
 - Git & GitHub
 - unittest
 
@@ -41,37 +42,37 @@ Simulation
 - Inheritance
 - Polymorphism
 - Abstraction
-- Clean Code and Project Structure
-- Software Development using Git Branches
+- Modular Project Structure
+- Git Workflow
 
-## Status
+## Upcoming Features
+
+- [ ] Unit Tests
+- [ ] Detailed Simulation Mode
+- [ ] Gantt Chart Visualization
+- [ ] Throughput and CPU Utilization
+- [ ] Preemptive Scheduling Algorithms
+- [ ] GUI (Optional)
+
+## Current Status
+
 v1.0
 ------
-✅ FCFS
-✅ SJF
-✅ Priority
-✅ Round Robin
-✅ Metrics
+✅ FCFS  
+✅ SJF  
+✅ Priority Scheduling  
+✅ Round Robin  
+✅ Metrics Module  
+✅ CSV Import/Export  
 
 v1.1
 ------
-□ Statistics module(TBD)
-□ Comparison table(TBD)
-□ Unit tests(TBD)
+□ Unit Tests (`tests/UT/`)  
+□ Detailed Simulation Mode  
+□ Ready Queue Visualization  
 
 v1.2
 ------
-□ Gantt chart
-□ Detailed simulation mode
-□ Ready queue visualization
-
-v1.3
-------
-□ CSV import/export (TBD after statistics module implemenatation)
-□ Throughput
-□ CPU utilization
-
-v2.0
-------
-□ Preemptive schedulers
-□ GUI
+□ Gantt Chart  
+□ Throughput  
+□ CPU Utilization
