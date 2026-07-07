@@ -12,25 +12,6 @@ from scheduler.PriorityScheduler import PriorityScheduler
 from scheduler.RoundRobin import RoundRobin
 # from statistics.metrics import Metrics
 
-#this must take input from user and creat process with
-#attribute burst time, priority and and assign process id
-#and print output params tbd
-# main.py
-#    ↓
-# Take input from user
-#    ↓
-# Create Process objects
-#    ↓
-# Store them in a list(done)
-#    ↓
-# Choose scheduling algorithm (tbd)
-#    ↓
-# Run scheduler
-#    ↓
-# Scheduler computes metrics
-#    ↓
-# Print results
-#we need to import variosu module once written we can use them to create process and assign attributes
 def main():
     print("Welcome to the Operating System Process Scheduler Simulation!")
     x=int(input("Give input of processes: 1 OR use predefined processes input:0  \n "))
@@ -121,6 +102,8 @@ if __name__ == "__main__":
 
 # statistics.print_comparison()
 # [ ] Add ready queue visualization
+#wriet assertequal finalcompletio order and round off comletion time test cases in tests module
+
 
 
 
