@@ -48,5 +48,6 @@ class SJF(Scheduler):
             remaining.remove(process)
 
     def run_detail(self):
+        #I wanted to implement a more detailed version of SJF,/by adding more logging
         print("Running Shortest Job First...")
         self.run()

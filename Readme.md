@@ -45,5 +45,33 @@ Simulation
 - Software Development using Git Branches
 
 ## Status
+v1.0
+------
+✅ FCFS
+✅ SJF
+✅ Priority
+✅ Round Robin
+✅ Metrics
 
-🚧 Under Development
+v1.1
+------
+□ Statistics module(TBD)
+□ Comparison table(TBD)
+□ Unit tests(TBD)
+
+v1.2
+------
+□ Gantt chart
+□ Detailed simulation mode
+□ Ready queue visualization
+
+v1.3
+------
+□ CSV import/export (TBD after statistics module implemenatation)
+□ Throughput
+□ CPU utilization
+
+v2.0
+------
+□ Preemptive schedulers
+□ GUI
