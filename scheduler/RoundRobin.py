@@ -51,7 +51,7 @@ class RoundRobin(Scheduler):
             process.remaining_time -= (
                 execution_time
             )
-
+          #second while loop appends the new processes in the RR queue 
             while (
                 remaining
                 and remaining[0].arrival_time
@@ -60,7 +60,7 @@ class RoundRobin(Scheduler):
                 queue.append(
                     remaining.pop(0)
                 )
-
+          #if process is not finished put it at last of the queue
             if process.remaining_time > 0:
                 queue.append(process)
             else:
