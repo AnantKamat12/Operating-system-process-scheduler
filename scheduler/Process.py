@@ -42,5 +42,5 @@ class Process:
         return x+y
 
     def __str__(self):
-        return f"Process ID: {self.process_id}, Burst Time: {self.burst_time}, Priority: {self.priority}, Remaining Time: {self.remaining_time}, Waiting Time: {self.waiting_time}, Turnaround Time: {self.turnaround_time}, arrival_time: {self.arrival_time}"
+        return f"Process PID: {self.pid}, Process Encrypt ID: {self.process_id}, Burst Time: {self.burst_time}, Priority: {self.priority}, Remaining Time: {self.remaining_time}, Waiting Time: {self.waiting_time}, Turnaround Time: {self.turnaround_time}, arrival_time: {self.arrival_time}"
 

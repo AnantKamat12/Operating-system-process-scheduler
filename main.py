@@ -31,7 +31,7 @@ from utils.Predefined_Processes import Predefined_Processes
 #we need to import variosu module once written we can use them to create process and assign attributes
 def main():
     print("Welcome to the Operating System Process Scheduler Simulation!")
-    x=int(input("Give input of processes=1 or use predefined processes input=0: "))
+    x=int(input("Give input of processes: 1 OR use predefined processes input:0  \n "))
     process_list=[]
     if x:
         num_of_process=int(input(("Enter the num of process you want to create:")))
@@ -46,8 +46,8 @@ def main():
     else:
         
         Predefined_Processes_obj=Predefined_Processes()
-        print("Available process trains:")
         Predefined_Processes_obj.print_all_trains()
+        print("#"*50 +"Choose_one_from_the_above" + "#"*50+"\n")
         choose=int(input("Choose a list of processes from given list of processes: "))
         
         chosen_train=Predefined_Processes_obj.get_processes(choose)
@@ -61,7 +61,8 @@ def main():
 
     print("\nCreated Processes:")
     for i, process in enumerate(process_list, start=1):
-        print(f"  [PID {process.pid}], Process_encrypt_id: {process.process_id}, Burst: {process.burst_time}, Priority: {process.priority}, Arrival: {process.arrival_time}")
+        #print(f"  [PID {process.pid}], Process_encrypt_id: {process.process_id}, Burst: {process.burst_time}, Priority: {process.priority}, Arrival: {process.arrival_time}")
+        print(f"  [Process {i}] {process}")
 
     print("\nProcess list created successfully. will run all scheduling algorithms on train of processes now.")
     #just do FCFS.run(process_list) SJF.run(process_list) Priority.run(process_list) RoundRobin.run(process_list) and print the output of each algorithm

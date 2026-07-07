@@ -101,14 +101,19 @@ class Predefined_Processes:
         print("\nAvailable process trains:")
 
         for i, train in enumerate(self.all_trains, start=1):
+            print("#"*50+"\n")
             print(f"\n{i}. {self.train_descriptions[i - 1]}")
             self.print_train(train)
 
     def get_processes(self, choice):
         if 1 <= choice <= len(self.all_trains):
             print(
+
+                "*" * 50 + "\n",
                 f"\n--- Selected Train {choice}: "
                 f"{self.train_descriptions[choice - 1]} ---"
+                "*" *50
+
             )
             return self.all_trains[choice - 1]
 
