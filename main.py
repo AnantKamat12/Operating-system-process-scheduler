@@ -103,6 +103,26 @@ if __name__ == "__main__":
 # [ ] Add run_detail() method to all scheduling algorithms
 # [ ] Explain scheduling decisions step-by-step
 # [ ] Explain process preemption and queue movements
+# fcfs = FCFS(copy.deepcopy(processes))
+# fcfs.run()
+
+# sjf = SJF(copy.deepcopy(processes))
+# sjf.run()
+
+# rr = RoundRobin(copy.deepcopy(processes), quantum=2)
+# rr.run()
+
+# priority = PriorityScheduler(copy.deepcopy(processes))
+# priority.run()
+
+# statistics = Statistics()
+
+# statistics.add_result("FCFS", fcfs)
+# statistics.add_result("SJF", sjf)
+# statistics.add_result("RR", rr)
+# statistics.add_result("Priority", priority)
+
+# statistics.print_comparison()
 # [ ] Add ready queue visualization
 
 
