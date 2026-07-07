@@ -111,7 +111,7 @@ def main():
             "2 -> priority\n"
             "3 -> arrival_time\n"
         )
-        print("Find Example csvs in tests/ module")2
+        print("Find Example csvs in tests/ module")
 
         file_path = input(
             "Enter CSV file path: "
