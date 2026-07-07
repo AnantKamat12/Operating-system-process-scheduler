@@ -65,14 +65,13 @@ v1.0
 ✅ Metrics Module  
 ✅ CSV Import/Export  
 
-v1.1
+TBD
 ------
 □ Unit Tests (`tests/UT/`)  
-□ Detailed Simulation Mode  
-□ Ready Queue Visualization  
 
-v1.2
-------
+
+TBD
+-----
 □ Gantt Chart  
 □ Throughput  
 □ CPU Utilization
