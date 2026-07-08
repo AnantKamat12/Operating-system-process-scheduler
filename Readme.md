@@ -15,6 +15,7 @@ A Python-based simulator for classical CPU scheduling algorithms built to practi
 - ✅ Comparison Table
 - ✅ CSV Process Input
 - ✅ CSV Metrics Export
+- ✅ Unittests
 
 ## Project Structure
 
@@ -64,11 +65,6 @@ v1.0
 ✅ Round Robin  
 ✅ Metrics Module  
 ✅ CSV Import/Export  
-
-TBD
-------
-□ Unit Tests (`tests/UT/`)  
-
 
 TBD
 -----
