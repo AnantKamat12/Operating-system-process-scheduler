@@ -15,9 +15,9 @@ def read_processes_from_csv(file_path):
     for i, row in df.iterrows():
         process={
             "process_id": i + 1,
-            "burst_time": int(row[0]),  # Assuming burst time is in the first column
-            "priority": int(row[1]),  # Assuming priority is in the second column
-            "arrival_time": int(row[2])  # Assuming arrival time is in the third column
+            "burst_time": int(row.iloc[0]),  # Assuming burst time is in the first column
+            "priority": int(row.iloc[1]),  # Assuming priority is in the second column
+            "arrival_time": int(row.iloc[2])  # Assuming arrival time is in the third column
         }
 
         process_list.append(process)
