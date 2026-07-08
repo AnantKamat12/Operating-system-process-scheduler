@@ -102,7 +102,14 @@ class TestAllAlgorithms(unittest.TestCase):
             scheduler_fcfs.average_waiting_time,
             metrics.results[0]["Average_WT"]
         )
-
+        self.assertEqual(
+            scheduler_fcfs.average_turnaround_time,
+            metrics.results[0]["Average_TAT"]
+        )
+        self.assertEqual(
+            scheduler_fcfs.average_response_time,
+            metrics.results[0]["Average_RT"]
+        )
         metrics.export_to_csv("test_metrics.csv")
 
         self.assertTrue(os.path.exists("test_metrics.csv"))
