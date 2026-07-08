@@ -38,7 +38,6 @@ README.md
 - unittest
 
 ## Learning Goals
-
 - Encapsulation
 - Inheritance
 - Polymorphism
@@ -47,8 +46,6 @@ README.md
 - Git Workflow
 
 ## Upcoming Features
-
-- [ ] Unit Tests
 - [ ] Detailed Simulation Mode
 - [ ] Gantt Chart Visualization
 - [ ] Throughput and CPU Utilization
