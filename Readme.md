@@ -70,8 +70,8 @@ TBD
 □ Unit Tests (`tests/UT/`)  
 
 
-TBD soon
-------
-□ Gantt Chart  (in statistics module)
+TBD
+-----
+□ Gantt Chart  
 □ Throughput  
 □ CPU Utilization
