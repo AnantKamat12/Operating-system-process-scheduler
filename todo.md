@@ -1,4 +1,3 @@
-This is exactly how I'd plan it if we were treating this like an engineering project. Each task teaches **one new concept**, and by the end you'll have a project that looks like something maintained in industry.
 
 ---
 
