@@ -65,6 +65,8 @@ v1.0
 
 TBD
 -----
+Dockerisation and githyb actions
+see todo.md
 □ Gantt Chart  
 □ Throughput  
 □ CPU Utilization
